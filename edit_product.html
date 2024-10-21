@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajnandini Automations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Product</h2>
+        <form action="edit_product.php" method="POST" enctype="multipart/form-data">
+            <!-- Product Name -->
+            <div class="form-group">
+                <label for="productName">Product Name (Existing):</label>
+                <input type="text" id="productName" name="productName" class="form-control" required>
+            </div>
+
+            <!-- Product Description -->
+            <div class="form-group">
+                <label for="productDescription">New Product Description:</label>
+                <textarea id="productDescription" name="productDescription" class="form-control" rows="4"></textarea>
+            </div>
+
+            <!-- Product Link -->
+            <div class="form-group">
+                <label for="productLink">New Product Link:</label>
+                <input type="url" id="productLink" name="productLink" class="form-control">
+            </div>
+
+            <!-- Product Image -->
+            <div class="form-group">
+                <label for="productImage">New Product Image:</label>
+                <input type="file" id="productImage" name="productImage" class="form-control-file" accept="image/*">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-warning">Edit Product</button>
+        </form>
+    </div>
+</body>
+</html>
