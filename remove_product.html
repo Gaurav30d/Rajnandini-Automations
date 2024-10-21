@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Remove Product</h2>
+        <form action="remove_product.php" method="POST">
+            <!-- Product Name -->
+            <div class="form-group">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" class="form-control" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-danger">Remove Product</button>
+        </form>
+    </div>
+</body>
+</html>
